@@ -19,7 +19,7 @@ public class test
 		//cap.setCapability("binary","C:/Program Files (x86)/Mozilla Firefox/firefox.exe");
 		cap.setBrowserName("chrome");
 		cap.setPlatform(Platform.WIN10);
-		URL url=new URL(" http://192.168.100.109:4448/wd/hub");
+		URL url=new URL(" http://192.168.100.109:3333/wd/hub");
 		WebDriver wd=new RemoteWebDriver(url,cap);
 		wd.get("http://learn-automation.com");
 		System.out.println("Title===>"+wd.getTitle());
